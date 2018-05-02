@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+    <string name="action_settings">Settings</string>
+    <string name="firstTeam">CSKA</string>
+    <string name="secondTeam">PAN</string>
+    <string name="firstMetric">Free Throw</string>
+    <string name="secondMetric">+2 points</string>
+    <string name="thirdMetric">+3 points</string>
+</resources>

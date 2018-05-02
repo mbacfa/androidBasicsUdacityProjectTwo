@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/score_body_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/TeamName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/firstTeam" />
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        style="@style/Score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        style="@style/topButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addThreeForTeamA"
+                        android:text="@string/thirdMetric" />
+
+                    <Button
+                        style="@style/lowerButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addTwoForTeamA"
+                        android:text="@string/secondMetric" />
+
+                    <Button
+                        style="@style/lowerButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneForTeamA"
+                        android:text="@string/firstMetric" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/teamAPadding"
+                        android:src="@drawable/cska" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dividerMargin"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/TeamName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secondTeam" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        style="@style/Score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        style="@style/topButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addThreeForTeamB"
+                        android:text="@string/thirdMetric" />
+
+                    <Button
+                        style="@style/lowerButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addTwoForTeamB"
+                        android:text="@string/secondMetric" />
+
+                    <Button
+                        style="@style/lowerButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneForTeamB"
+                        android:text="@string/firstMetric" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/teamBPadding"
+                        android:src="@drawable/pan" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/myResetFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/marginReset"
+            android:onClick="resetScore"
+            android:src="@drawable/ic_clear_black_24dp"
+            app:elevation="@dimen/elevationFAB" />
+
+
+    </RelativeLayout>
+
+</layout>

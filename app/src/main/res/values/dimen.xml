@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="teamAPadding">32dp</dimen>
+    <dimen name="teamBPadding">16dp</dimen>
+    <dimen name="teamNamePadding">16dp</dimen>
+    <dimen name="dividerMargin">16dp</dimen>
+    <dimen name="teamNameFontSize">14sp</dimen>
+    <dimen name="scoreFontSize">56sp</dimen>
+    <dimen name="marginBetweenButtons">8dp</dimen>
+    <dimen name="marginAroundButtons">24dp</dimen>
+    <dimen name="marginReset">32dp</dimen>
+    <dimen name="elevationFAB">4dp</dimen>
+</resources>
